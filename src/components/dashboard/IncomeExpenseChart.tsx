@@ -34,10 +34,10 @@ export const IncomeExpenseChart: React.FC<IncomeExpenseChartProps> = ({ data }) 
               <CartesianGrid strokeDasharray="3 3" vertical={false} />
               <XAxis dataKey="name" />
               <YAxis 
-                tickFormatter={(value) => `$${value}`}
+                tickFormatter={(value) => `₹${value}`}
               />
               <Tooltip 
-                formatter={(value: number) => [`$${value.toFixed(2)}`, 'Amount']}
+                formatter={(value: number) => [`₹${value.toFixed(2)}`, 'Amount']}
               />
               <Legend />
               <Bar dataKey="income" fill="#25D366" name="Income" />

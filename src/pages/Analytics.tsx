@@ -129,7 +129,7 @@ const Analytics = () => {
               <CardTitle className="text-sm font-medium">Total Income</CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold text-green-600">${income.toFixed(2)}</div>
+              <div className="text-2xl font-bold text-green-600">₹{income.toFixed(2)}</div>
             </CardContent>
           </Card>
           <Card>
@@ -137,7 +137,7 @@ const Analytics = () => {
               <CardTitle className="text-sm font-medium">Total Expenses</CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold text-red-600">${expenses.toFixed(2)}</div>
+              <div className="text-2xl font-bold text-red-600">₹{expenses.toFixed(2)}</div>
             </CardContent>
           </Card>
           <Card>
@@ -146,7 +146,7 @@ const Analytics = () => {
             </CardHeader>
             <CardContent>
               <div className={`text-2xl font-bold ${(income - expenses) >= 0 ? 'text-green-600' : 'text-red-600'}`}>
-                ${(income - expenses).toFixed(2)}
+                ₹{(income - expenses).toFixed(2)}
               </div>
             </CardContent>
           </Card>

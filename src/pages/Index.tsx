@@ -121,19 +121,19 @@ const Index = () => {
             <>
               <StatCard 
                 title="Total Balance"
-                value={`$${totalBalance.toLocaleString('en-US', { minimumFractionDigits: 2 })}`}
+                value={`₹${totalBalance.toLocaleString('en-US', { minimumFractionDigits: 2 })}`}
                 icon={<DollarSign className="h-5 w-5" />}
                 trend={{ value: 0, isPositive: true }}
               />
               <StatCard 
                 title="Monthly Income"
-                value={`$${currentMonthIncome.toLocaleString('en-US', { minimumFractionDigits: 2 })}`}
+                value={`₹${currentMonthIncome.toLocaleString('en-US', { minimumFractionDigits: 2 })}`}
                 icon={<ArrowDown className="h-5 w-5" />}
                 trend={{ value: Math.round(incomeTrendPercentage), isPositive: incomeTrendPercentage >= 0 }}
               />
               <StatCard 
                 title="Monthly Expenses"
-                value={`$${currentMonthExpenses.toLocaleString('en-US', { minimumFractionDigits: 2 })}`}
+                value={`₹${currentMonthExpenses.toLocaleString('en-US', { minimumFractionDigits: 2 })}`}
                 icon={<ArrowUp className="h-5 w-5" />}
                 trend={{ value: Math.round(Math.abs(expenseTrendPercentage)), isPositive: expenseTrendPercentage <= 0 }}
               />

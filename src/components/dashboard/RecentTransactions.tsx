@@ -46,7 +46,7 @@ export const RecentTransactions: React.FC<RecentTransactionsProps> = ({ transact
                 </div>
                 <div className="flex flex-col items-end">
                   <span className={transaction.type === 'income' ? "text-finance-green" : "text-finance-red"}>
-                    {transaction.type === 'income' ? '+' : '-'}${Math.abs(transaction.amount).toFixed(2)}
+                    {transaction.type === 'income' ? '+' : '-'}₹{Math.abs(transaction.amount).toFixed(2)}
                   </span>
                   <Badge variant="outline" className="mt-1">
                     {transaction.category}

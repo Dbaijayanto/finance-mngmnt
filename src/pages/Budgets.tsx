@@ -161,10 +161,10 @@ const Budgets = () => {
                   <div className="space-y-2">
                     <div className="flex justify-between text-sm">
                       <span className="text-muted-foreground">
-                        ${spending.toFixed(2)} spent
+                        ₹{spending.toFixed(2)} spent
                       </span>
                       <span className="text-muted-foreground">
-                        ${category.budget_amount.toFixed(2)} budget
+                        ₹{category.budget_amount.toFixed(2)} budget
                       </span>
                     </div>
                     <Progress value={progress} className="h-2" />

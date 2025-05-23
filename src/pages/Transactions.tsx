@@ -273,7 +273,7 @@ const Transactions = () => {
                           transaction.type === 'income' ? "text-green-600" : "text-red-600"
                         )}>
                           {transaction.type === 'income' ? '+' : '-'}
-                          ${Math.abs(transaction.amount).toFixed(2)}
+                          ₹{Math.abs(transaction.amount).toFixed(2)}
                         </TableCell>
                         <TableCell>
                           <div className="flex items-center gap-2">

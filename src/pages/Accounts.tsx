@@ -148,8 +148,8 @@ const AccountsPage: React.FC = () => {
                         </div>
                       </TableCell>
                       <TableCell className="capitalize">{account.type}</TableCell>
-                      <TableCell>${account.balance.toFixed(2)}</TableCell>
-                      <TableCell>{account.credit_limit ? `$${account.credit_limit.toFixed(2)}` : '-'}</TableCell>
+                      <TableCell>₹{account.balance.toFixed(2)}</TableCell>
+                      <TableCell>₹{account.credit_limit ? `{account.credit_limit.toFixed(2)}` : '-'}</TableCell>
                       <TableCell className="text-right">
                         <div className="flex justify-end space-x-2">
                           <Button variant="ghost" size="icon" onClick={() => handleEditAccount(account)}>
