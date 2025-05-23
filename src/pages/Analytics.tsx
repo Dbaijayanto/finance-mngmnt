@@ -174,7 +174,7 @@ const Analytics = () => {
                   <XAxis dataKey="month" />
                   <YAxis />
                   <Tooltip 
-                    formatter={(value: number) => [`$${value.toFixed(2)}`, 'Spending']}
+                    formatter={(value: number) => [`₹${value.toFixed(2)}`, 'Spending']}
                   />
                   <Bar dataKey="amount" fill="#8884d8" />
                 </BarChart>
@@ -196,14 +196,14 @@ const Analytics = () => {
                     cx="50%"
                     cy="50%"
                     outerRadius={100}
-                    label={({ name, value }) => `${name}: $${value.toFixed(0)}`}
+                    label={({ name, value }) => `₹{name}: ₹${value.toFixed(0)}`}
                   >
                     {categoryData.map((entry, index) => (
                       <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                     ))}
                   </Pie>
                   <Tooltip 
-                    formatter={(value: number) => [`$${value.toFixed(2)}`, 'Spending']}
+                    formatter={(value: number) => [`₹${value.toFixed(2)}`, 'Spending']}
                   />
                 </PieChart>
               </ResponsiveContainer>

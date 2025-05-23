@@ -122,7 +122,7 @@ const Index = () => {
               <StatCard 
                 title="Total Balance"
                 value={`₹${totalBalance.toLocaleString('en-US', { minimumFractionDigits: 2 })}`}
-                icon={<DollarSign className="h-5 w-5" />}
+              
                 trend={{ value: 0, isPositive: true }}
               />
               <StatCard 

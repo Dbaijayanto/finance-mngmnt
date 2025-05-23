@@ -11,6 +11,7 @@ import {
 } from 'lucide-react';
 import { useAuth } from '@/context/AuthContext';
 import { Button } from '@/components/ui/button';
+import { CircleDollarSign } from "lucide-react";
 
 export const Sidebar: React.FC = () => {
   const currentPath = window.location.pathname;
@@ -40,8 +41,8 @@ export const Sidebar: React.FC = () => {
     <div className="flex flex-col h-full bg-sidebar text-sidebar-foreground">
       <div className="px-6 py-8">
         <h1 className="text-xl font-bold text-white flex items-center">
-          <DollarSign className="mr-2 h-6 w-6 text-primary" />
-          FinancePro
+          
+          ₹ FinancePro
         </h1>
       </div>
       
